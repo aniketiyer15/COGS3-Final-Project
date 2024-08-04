@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 20px; /* Increased spacing between images */
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center py-5">
+        <h1 class="display-4 text-white">Aniket Iyer</h1>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="COGS 3 Resume.pdf" download>Download</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="about" class="container bg-dark text-white rounded p-4 my-4">
+        <h2>About Me</h2>
+        <div class="d-flex justify-content-center my-3">
+            <img src="images/dfa.jpg" alt="Image 1" class="about-image rounded-circle">
+            <img src="images/math.jpg" alt="Image 2" class="about-image rounded-circle">
+            <img src="images/ml.jpeg" alt="Image 3" class="about-image rounded-circle">
+            <img src="images/musmath.png" alt="Image 4" class="about-image rounded-circle">
+        </div>
+        <p class="text-justify">Hello! My name is Aniket Iyer, a dedicated and passionate student currently pursuing a Bachelor of Science in Mathematics and Computer Science at the University of California, San Diego. With a strong academic foundation in areas such as algorithm design, numerical analysis, and computer organization, I have consistently demonstrated my ability to tackle complex problems and develop innovative solutions. Driven by curiosity and a passion for both technical and artistic pursuits, I aim to make meaningful contributions in the fields of mathematics and computer science while continuing to share my love for music.</p>
+    </section>
+    <section id="projects" class="container bg-dark text-white rounded p-4 my-4">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch project" data-category="web">
+                <div class="card bg-light text-dark mb-3 flex-fill">
+                    <img src="images/asteroid.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">AstroVantage: Leveraging ML to Decode Asteroids</h5>
+                        <p class="card-text">This project aims to enhance our capabilities at understanding asteroids in our solar system using machine learning. While some features of asteroids are easily measurable, others are more difficult to measure as they may require many observations over a long period of time to calculate accurately. Our goal with the project is to apply neural networks and regression techniques to predict features of asteroids that are otherwise time or computationally intensive to figure out.</p>
+                        <a href="https://github.com/harshilxd/Asteroid-Feature-Prediction" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch project" data-category="web">
+                <div class="card bg-light text-dark mb-3 flex-fill">
+                    <img src="images/hprices.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">HousePrice Wizard: ML-Driven Real Estate Valuation</h5>
+                        <p class="card-text">As entire industries lose stability and the job market becomes a center of chaos, an already concerning housing situation worsens across cities and towns all over California. We wanted to explore how changes in each industry affect the housing market, do the busts and booms of some industries have a different or disproportionate effect than others?. We explored housing prices across 5 different counties: Alameda, San Francisco, Los Angeles, San Diego and Santa Clara between 1990 and 2023 and made predictions for the future.</p>
+                        <a href="https://github.com/COGS108/Group095_WI24/blob/master/FinalProject_Group095_WI24.ipynb" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch project" data-category="mobile">
+                <div class="card bg-light text-dark mb-3 flex-fill">
+                    <img src="images/travelguide.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">TravelMate AI: Your Smart Itinerary Planner</h5>
+                        <p class="card-text">Our goal was to develop a WebApp that, given a YouTube video URL, returns a map with a pin on each location mentioned. This will simplify your itinerary-planning: no more Googling places you heard from a video, our WebApp will do it automatically! In addition, when you click on a pin, you'll see a link directing you to <a href="https://www.booking.com/">booking.com</a>, where you can find hotels for that destination.</p>
+                        <a href="https://github.com/aniketiyer15/fa23-ai-team-byte-benders" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch project" data-category="mobile">
+                <div class="card bg-light text-dark mb-3 flex-fill">
+                    <img src="images/zodiac.jpg" class="card-img-top" alt="Project Image">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">AutomatedAstro: DFA Zodiac Classifier</h5>
+                        <p class="card-text">This program aims to develop a Definite Finite Automaton that recognizes the zodiac sign depending upon the date of the birth of an individual. Once you input your DOB in a MM/DD/YYYY format, the string goes through a set of computations before outputting the corresponding zodiac sign.</p>
+                        <a href="CSE_105_Project_Task_1.pdf" target="_blank" class="btn btn-primary mt-auto">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container bg-dark text-white rounded p-4 my-4 text-center">
+        <h2>Contact</h2>
+        <div class="d-flex justify-content-center my-3">
+            <a href="https://www.linkedin.com/in/aniket-iyer" target="_blank" class="mx-3">
+                <img src="images/linkedin.jpg" alt="LinkedIn" class="contact-icon">
+            </a>
+            <a href="https://www.instagram.com/realdonaldtrump/" target="_blank" class="mx-3">
+                <img src="images/instagram.png" alt="Instagram" class="contact-icon">
+            </a>
+            <a href="https://www.facebook.com/pradeep.khosla" target="_blank" class="mx-3">
+                <img src="images/facebook.png" alt="Facebook" class="contact-icon">
+            </a>
+            <a href="mailto:aniketiyer19@gmail.com" class="mx-3">
+                <img src="images/gmail.jpg" alt="Email" class="contact-icon">
+            </a>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Aniket Iyer</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
